@@ -127,7 +127,6 @@ mod tests {
     #[test]
     fn sample() {
         let string = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC";
-        //assert_eq!((20,12,17,21), CountingDNANucleotides(string));
-        assert_eq!(NucleobasesCounts { a: 0, g: 0, t: 0, c: 0 }, counting_DNA_nucleotides(string));
+        assert_eq!(NucleobasesCounts { a: 20, g: 17, t: 21, c: 12 }, counting_DNA_nucleotides(string));
     }
 }
